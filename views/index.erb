@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title>Simple Map</title>
+    <!--
+    <link rel="stylesheet" type="text/css" href="http://192.168.102.66:8080/arcgis_js_api/library/3.5/jsapi/js/dojo/dijit/themes/tundra/tundra.css"/>
+    <link rel="stylesheet" type="text/css" href="http://192.168.102.66:8080/arcgis_js_api/library/3.5/jsapi/js/esri/css/esri.css" />
+    <script type="text/javascript" src="http://192.168.102.66:8080/arcgis_js_api/library/3.5/jsapi/init.js"></script> 
+    -->
+    <link rel="stylesheet" href="http://js.arcgis.com/3.8/js/dojo/dijit/themes/claro/claro.css">    
+    <link rel="stylesheet" href="http://js.arcgis.com/3.8/js/esri/css/esri.css">
+    <script src="http://js.arcgis.com/3.8/"></script>
+    <style>
+      html, body, #map {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #FFF;
+        overflow: hidden;
+        font-family: "Trebuchet MS";
+      }
+    </style>
+    <script>
+      dojo.require("esri.map");
+      var map;
+      var ly;
+
+      function init() {
+        map = new esri.Map("map");
+        layer = new esri.layers.ArcGISTiledMapServiceLayer("<%= @service_address %>");
+        map.addLayer(layer);
+      }
+
+      dojo.addOnLoad(init);     
+    </script>
+  </head>
+
+  <body>
+    <div id="map"></div>
+  </body>
+</html>

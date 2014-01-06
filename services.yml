@@ -1,0 +1,4 @@
+port: 80
+host: localhost
+services:
+  baoshan: /home/rserver/proj/RMapServer/data/baoshan
