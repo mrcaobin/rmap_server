@@ -1,6 +1,6 @@
 Project Description
 ================================
-This project is aimed to provide a easy to publish RESTful base map service,
+This project is aimed to provide a easy way to publish RESTful base map service,
 support many kinds of datasource, such as MBTile/ArcGISCache/OnlineMaps etc.
 The application is written in pure ruby, will work fine in Linux.
 
