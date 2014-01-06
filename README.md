@@ -14,24 +14,24 @@ version 0.1:
 
 How To Use
 ================================
-1.Install Sinatra
-   gem install sinatra
-2.Prepare Tiled Data, for example, "/home/data/Natural_Earth" 
-  the directory structure is like this
-   -Natural_Earth
-        |-Layers
-            |-_alllayers
-            |-Status.gdb
-            |-conf.cdi
-            |-Conf.xml
-3.Edit the config file "services.yml", for example:
-      port: 4567 
-      host: 127.0.0.1
-      services:
-          natural_earth: /home/data/Natural_Earth
-4.Run "ruby app.rb" to start server.
-5.In browser, open : "http://127.0.0.1:4567/natural_earth", enjoy.
-6.Use Nginx+Unicorn, run "unicorn -c config/unicorn.rb"
+    1.Install Sinatra
+      gem install sinatra
+    2.Prepare Tiled Data, for example, "/home/data/Natural_Earth"
+      the directory structure is like this
+         -Natural_Earth
+            |-Layers
+                |-_alllayers
+                |-Status.gdb
+                |-conf.cdi
+                |-Conf.xml
+    3.Edit the config file "services.yml", for example:
+       port: 4567 
+       host: 127.0.0.1
+       services:
+           natural_earth: /home/data/Natural_Earth
+    4.Run "ruby app.rb" to start server.
+    5.In browser, open : "http://127.0.0.1:4567/natural_earth", enjoy.
+    6.Use Nginx+Unicorn, run "unicorn -c config/unicorn.rb"
 Bug track
 ================================ 
 if you have any question, my email is :mrcaobin@gmail.com.      
