@@ -31,7 +31,7 @@ How To Use
           natural_earth: /home/data/Natural_Earth
 4.Run "ruby app.rb" to start server.
 5.In browser, open : "http://127.0.0.1:4567/natural_earth", enjoy.
-
+6.Use Nginx+Unicorn, run "unicorn -c config/unicorn.rb"
 Bug track
 ================================ 
 if you have any question, my email is :mrcaobin@gmail.com.      
